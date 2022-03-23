@@ -23,7 +23,7 @@ class Ostoskori:
         # lisää tuotteen
         self.saldo = self.saldo + 1
         self._hinta = self._hinta + lisattava.hinta()
-        self._ostokset.append(lisattava)
+        self._ostokset.append(Ostos(lisattava))
 
     def poista_tuote(self, poistettava: Tuote):
         # poistaa tuotteen
